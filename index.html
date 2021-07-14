@@ -1,6 +1,16 @@
+<script>	
+function test() 
+{if (window.event.keyCode == 13) 
+{window.open('whatsapp://send?phone='+URL1.value)}
+}	
+
+setTimeout(function()
+{document.getElementById("URL1").focus();
+},150);
+</script>
 <p align="center">
-  <input name="DefaultPicUrl" type="text" id="DefaultPicUrl" >
-  <input type="button" value="OK" onclick="window.open('whatsapp://send?phone='+DefaultPicUrl.value)"/>
+  <input name="URL1" type="text" id="URL1" onkeydown="test()"/>
+  <input type="button" value="OK" onclick="window.open('whatsapp://send?phone='+URL1.value)"/>
   </p>
   </p>
 <p align="center">www.jincan.net</p>
