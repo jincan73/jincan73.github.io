@@ -1,16 +1,15 @@
-<script>	
+<script>		
 function test() 
 {if (window.event.keyCode == 13) 
 {window.open('whatsapp://send?phone='+URL1.value)}
 }	
-
 setTimeout(function()
 {document.getElementById("URL1").focus();
 },150);
 </script>
-<p align="center">
-  <input name="URL1" type="text" id="URL1" onkeydown="test()" value="直接回车,聊WA"/>
+<p>&nbsp;</p>
+<p align="center">直接输入号码回车,聊Whatsapp<br />
+  <input name="URL1" type="text" id="URL1" onkeydown="test()"/>
   <input type="button" value="OK" onclick="window.open('whatsapp://send?phone='+URL1.value)"/>
-  </p>
-  </p>
+</p>
 <p align="center">www.jincan.net</p>
